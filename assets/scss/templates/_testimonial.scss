@@ -54,7 +54,7 @@ SECTION TESTIMONIAL
 .rating {
     &.five {
       li {
-        i {
+        svg, i {
           color: $secondary-color;
         }
       }
@@ -63,13 +63,13 @@ SECTION TESTIMONIAL
     &.four {
       li {
         &:not(:last-child) {
-          i {
+          svg, i {
             color: $secondary-color;
           }
         }
 
         &:last-child {
-          i {
+          svg, i {
             color: $black-lighter;
           }
         }
@@ -78,18 +78,12 @@ SECTION TESTIMONIAL
   
     &.three {
       li {
-        i {
+        svg, i {
           color: $secondary-color;
         }
   
-        &:last-child {
-          i {
-            color: $black-lighter;
-          }
-        }
-  
-        &:nth-child(4) {
-          i {
+        &:last-child, &:nth-child(4) {
+          svg, i {
             color: $black-lighter;
           }
         }
@@ -98,18 +92,12 @@ SECTION TESTIMONIAL
   
     &.two {
       li {
-        i {
+        svg, i {
           color: $black-lighter;
         }
 
-        &:first-child {
-          i {
-            color: $secondary-color;
-          }
-        }
-  
-        &:nth-child(2) {
-          i {
+        &:first-child, &:nth-child(2) {
+          svg, i {
             color: $secondary-color;
           }
         }
@@ -119,13 +107,13 @@ SECTION TESTIMONIAL
     &.one {
       li {
         &:first-child {
-          i {
+          svg, i {
             color: $secondary-color;
           }
         }
 
         &:not(:first-child) {
-          i {
+          svg, i {
             color: $black-lighter;
           }
         }
