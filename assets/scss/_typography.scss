@@ -28,7 +28,7 @@ body {
     margin: 0;
     text-align: left;
     background-color: $light;
-    color: #6a7695;
+    color: $black-light;
 }
 body ,html{
     width: 100%;
@@ -107,7 +107,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a{
-    color: #263b5e;
+    color: $primary-color;
 
     &:hover{
         color: $primary-color;
@@ -117,8 +117,13 @@ h6 a{
 
 .section-heading{
     h2{
-        color: #263b5e;
+        color: $primary-color;
         font-weight: 800;
     }
 }
 
+.blog-meta {
+    font-family: $secondary-font;
+    font-variant-numeric: lining-nums;
+    font-size: 0.9em;
+}

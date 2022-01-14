@@ -81,27 +81,27 @@ Common Styles
 
 
 .btn-main {
-    border-color: $secondary-color;
+    border-color: $primary-color;
     color: $light;
-    background: $secondary-color;
+    background: $primary-color;
 
     &:hover {
-        background: $primary-color;
-        color: $light;
-        border-color: $primary-color;
+        background: $secondary-color;
+        color: $black;
+        border-color: $secondary-color;
     }
 }
 
 
 .btn-main-2 {
-    background: $primary-color;
+    background: $secondary-color;
     color: $light;
-    border-color: $primary-color;
+    border-color: $secondary-color;
 
     &:hover {
-        background: $secondary-color;
+        background: $primary-color;
         color: $light;
-        border-color: $secondary-color;
+        border-color: $primary-color;
     }
 }
 
@@ -114,12 +114,12 @@ Common Styles
 
 
 .btn-border-tp {
-    border-color: $secondary-color;
+    border-color: $primary-color;
     background: transparent;
-    color: $secondary-color;
+    color: $primary-color;
 
     &:hover {
-        background: $secondary-color;
+        background: $primary-color;
         color: $light !important;
     }
 }
