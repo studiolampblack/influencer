@@ -18,6 +18,16 @@
     url("/fonts/alegreya-italic.woff") format("woff");
 }
 
+/* alegreya-italic - latin-ext_latin */
+@font-face {
+  font-family: "Alegreya";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local(""), url("/fonts/alegreya-extrabold.woff2") format("woff2"),
+    url("/fonts/alegreya-extrabold.woff") format("woff");
+}
+
 /* alegreya-sans-extrabold - latin-ext_latin */
 @font-face {
   font-family: "Alegreya Sans";
