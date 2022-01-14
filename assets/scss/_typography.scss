@@ -23,7 +23,7 @@ html {
 
 body {
     font-family: $primary-font;
-    font-size: 1.2em;
+    font-size: $base-font-size;
     line-height:30px;
     margin: 0;
     text-align: left;
@@ -87,7 +87,7 @@ h5 {
 
 .h6,
 h6 {
-    font-size: 1.2em;
+    font-size: $base-font-size;
 }
 
 
