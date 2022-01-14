@@ -15,8 +15,6 @@ paginate = 6
   [[params.plugins.css]]
   URL = "plugins/slick/slick.css"
   [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
   URL = "plugins/magnific-popup/magnific-popup.css"
   
   # JS Plugins
