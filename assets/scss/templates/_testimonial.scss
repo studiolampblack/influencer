@@ -55,7 +55,7 @@ SECTION TESTIMONIAL
     &.five {
       li {
         i {
-          color: $primary-color;
+          color: $secondary-color;
         }
       }
     }
@@ -64,7 +64,13 @@ SECTION TESTIMONIAL
       li {
         &:not(:last-child) {
           i {
-            color: $primary-color;
+            color: $secondary-color;
+          }
+        }
+
+        &:last-child {
+          i {
+            color: $black-lighter;
           }
         }
       }
@@ -73,7 +79,7 @@ SECTION TESTIMONIAL
     &.three {
       li {
         i {
-          color: $primary-color;
+          color: $secondary-color;
         }
   
         &:last-child {
@@ -92,15 +98,19 @@ SECTION TESTIMONIAL
   
     &.two {
       li {
+        i {
+          color: $black-lighter;
+        }
+
         &:first-child {
           i {
-            color: $primary-color;
+            color: $secondary-color;
           }
         }
   
         &:nth-child(2) {
           i {
-            color: $primary-color;
+            color: $secondary-color;
           }
         }
       }
@@ -110,7 +120,13 @@ SECTION TESTIMONIAL
       li {
         &:first-child {
           i {
-            color: $primary-color;
+            color: $secondary-color;
+          }
+        }
+
+        &:not(:first-child) {
+          i {
+            color: $black-lighter;
           }
         }
       }
