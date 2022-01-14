@@ -14,13 +14,17 @@
         </div>
       </div>
 
+      {{ if .Site.Data.homepage.subscribe.enable }}
+      {{ with .Site.Data.homepage.subscribe }}
       <div class="col-lg-6">
         <div class="subscribe">
-          <h4 class="mb-4">Get up to 20% Discount</h4>
-          <input type="text" class="form-control mb-4" placeholder="Put your email address">
-          <a href="#" class="btn btn-main">Download Now<i class="ti-angle-right ml-3"></i></a>
+          <h4 class="mb-4">{{ .title | default "Subscribe to updates" }}</h4>
+          <input type="text" class="form-control mb-4" placeholder="Enter your email address">
+          <a href="{{ .url }}" class="btn btn-main">{{ .label | default "Subscribe" }}<i class="fa-solid fa-angle-right ml-3"></i></a>
         </div>
       </div>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 
@@ -76,6 +80,11 @@
   ga('send', 'pageview');
 </script>
 {{ end }}
+
+<!-- Font Awesome -->
+<script src="js/brands.min.js"></script>
+<script src="js/solid.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
