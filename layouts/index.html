@@ -90,7 +90,7 @@
       {{ range .serviceItem }}
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="service-block mb-4 mb-lg-0">
-          <i class="{{ .icon }} text-dark"></i>
+          <i class="fa-solid {{ .icon }} text-dark"></i>
           <h4 class="mb-3 mt-4">{{ .title | markdownify }}</h4>
           <p class="mb-0">{{ .content | markdownify }}</p>
         </div>
@@ -210,7 +210,7 @@
         <div class="feature-item d-flex mt-5 mb-3">
           {{ if .icon }}
           <div class="icon-block">
-            <i class="{{ .icon }}"></i>
+            <i class="fa-solid {{ .icon }}"></i>
           </div>
           {{ end }}
           <div class="content">
@@ -372,7 +372,7 @@
       {{ range .contactItem }}
       <div class="col-lg-4 col-sm-6">
         <div class="contact-info-block text-center mb-4">
-          <i class="{{ .icon }}"></i>
+          <i class="fa-solid {{ .icon }}"></i>
           <p class="mb-0">{{ .title | markdownify }}</p>
           {{ range .list }}
           <h5>{{ .listItem }}</h5>
