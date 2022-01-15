@@ -103,10 +103,9 @@ share those images.
 ## Special Thanks
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
-- [Themify Icons](https://themify.me/themify-icons)
+- [FontAwesome](https://fontawesome.com/v6.0/)
 - [Magnific Popup](https://dimsemenov.com/plugins/magnific-popup/)
 - [Slick Slider](https://kenwheeler.github.io/slic/)
-- [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/gethugothemes/influencer-hugo/graphs/contributors)
 
 
