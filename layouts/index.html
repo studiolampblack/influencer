@@ -15,9 +15,14 @@
             <h4>Price :- <span class="text-color">{{ .currency | default "$" }}{{ .price }}</span></h4>
           </div>
           <p class="mb-4">{{ .content | markdownify }}</p>
-          <button class="snipcart-add-item btn btn-main mt-2" data-item-id="1"
-          data-item-name="{{ .title | markdownify }}" data-item-image="{{ .image | absURL }}" data-item-price="{{ .price }}" data-item-url="/">
-          {{ .label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
+          <button
+            class="btn btn-main mt-2"
+            data-item-id="1"
+            data-item-name="{{ .title | markdownify }}"
+            data-item-image="{{ .image | absURL }}"
+            data-item-price="{{ .price }}"
+            data-item-url="/"
+          >{{ .label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
         </button>
         </div>
       </div>
