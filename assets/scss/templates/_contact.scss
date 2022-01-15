@@ -19,12 +19,13 @@ CONTACT PAGE
 }
 
 
-.form-control{
+.form-control {
     border:1px solid rgba(0,0,0,0.04);
     box-shadow: 12px 7px 90px 0 rgba(110,123,131,.1);
     background: $light;
     height:60px;
     padding-left: 15px;
+    font-family: $secondary-font;
 }
 
 .form-control:focus,.form-control:hover{

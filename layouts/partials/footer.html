@@ -19,8 +19,11 @@
       <div class="col-lg-6">
         <div class="subscribe">
           <h4 class="mb-4">{{ .title | default "Subscribe to updates" }}</h4>
-          <input type="text" class="form-control mb-4" placeholder="Enter your email address">
-          <a href="{{ .url }}" class="btn btn-main">{{ .label | default "Subscribe" }}<i class="fa-solid fa-angle-right ml-3"></i></a>
+          <form action="https://tinyletter.com/{{ .tinyLetterId }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ .tinyLetterId }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <input type="text" class="form-control mb-4" name="email" id="tlemail" placeholder="Enter your email address" />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="{{ .label | default "Subscribe" }}" class="btn btn-main" />
+        </form>
         </div>
       </div>
       {{ end }}
