@@ -17,7 +17,7 @@
           <p class="mb-4">{{ .content | markdownify }}</p>
           <button
             class="btn btn-main mt-2"
-            onclick="window.location.href='{{ .Site.Data.homepage.banner.url | default "#" }}'">{{ .label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
+            onclick="window.location.href='{{ .url | default "#" }}'">{{ .label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
         </button>
         </div>
       </div>
