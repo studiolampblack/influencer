@@ -14,8 +14,8 @@
         </div>
       </div>
 
-      {{ if .Site.Data.homepage.subscribe.enable }}
-      {{ with .Site.Data.homepage.subscribe }}
+      {{ if .Site.Params.subscribe.enable }}
+      {{ with .Site.Params.subscribe }}
       <div class="col-lg-6">
         <div class="subscribe">
           <h4 class="mb-4">{{ .title | default "Subscribe to updates" }}</h4>
