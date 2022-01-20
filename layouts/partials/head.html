@@ -21,6 +21,10 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="icon" type="image/svg+xml" href="{{ `images/favicon.svg` | absURL }} " type="image/x-icon">
   <link rel="icon" type="image/png" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+  
+  {{ if .Site.Params.plausible.enable }}
+  {{ partial "plausible_head.html" . }}      
+  {{ end }}
 
   {{ "<!-- Overrides -->" | safeHTML }}
   {{ partial "head-overrides.html" . }}
