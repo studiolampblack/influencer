@@ -35,10 +35,10 @@
           {{ end }}
         </ul>
 
-        {{ if .Site.Params.navButton.enable }}
+        {{ if .Params.navButton.enable }}
         {{ "<!-- nav btn -->" | safeHTML }}
-        <button class="btn btn-border-tp btn-small ml-0 ml-lg-3 mb-3 mb-lg-0" onclick="window.location.href='{{ .Site.Data.homepage.banner.url | default "#" }}'">
-          {{ .Site.Data.homepage.banner.label | default "Buy now" }}
+        <button class="btn btn-border-tp btn-small ml-0 ml-lg-3 mb-3 mb-lg-0" onclick="window.location.href='{{ .Params.banner.url | default "#" }}'">
+          {{ .Params.banner.label | default "Buy now" }}
         </button>
         {{ end }}
       </div>
