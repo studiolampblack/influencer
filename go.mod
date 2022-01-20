@@ -1,4 +1,4 @@
-module influencer
+module github.com/studiolampblack/influencer
 
 go 1.17
 
