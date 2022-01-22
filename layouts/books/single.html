@@ -2,37 +2,34 @@
 
 <!-- Banner -->
 {{ if .Params.banner.enable }}
-{{ with .Params.banner }}
 <section class="banner-main py-7" id="banner">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-7 col-md-8">
         <div class="main-banner">
-          <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
-          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
+          <h1 class="mb-3 mt-2">{{ .Title | markdownify }}</h1>
 
           <div class="mb-4">
-            <h4>Price :- <span class="text-color">{{ .currency | default "$" }}{{ .price }}</span></h4>
+            <h4>Price :- <span class="text-color">{{ .Params.banner.currency | default "$" }}{{ .Params.banner.price }}</span></h4>
           </div>
-          <p class="mb-4">{{ .content | markdownify }}</p>
+          <p class="mb-4">{{ .Params.description | markdownify }}</p>
           <button
             class="btn btn-main mt-2"
-            onclick="window.location.href='{{ .url | default "#" }}'">{{ .label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
+            onclick="window.location.href='{{ .Params.buy | default "#" }}'">{{ .Params.banner.label | default "Buy now" }} <i class="fa-solid fa-angle-right ml-3"></i>
         </button>
         </div>
       </div>
 
-      {{ if .image }}
+      {{ if .Params.image }}
       <div class="col-lg-5 d-none d-lg-block">
         <div class="banner-img pt-5">
-          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+          <img src="{{ .Params.image | relURL }}" alt="{{ .Title | markdownify }}" class="img-fluid w-100">
         </div>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
-{{ end }}
 {{ end }}
 
 <!-- Book preview -->
