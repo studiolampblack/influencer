@@ -8,6 +8,7 @@
         <h2 class="mb-0 text-color">{{ .Site.Title }}</h2>
         {{ end }}
       </a>
+      {{ if (not .IsHome) }}
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain"
         aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +43,7 @@
         </button>
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </nav>
 </div>
