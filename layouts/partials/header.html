@@ -38,7 +38,7 @@
 
         {{ if .Params.navButton.enable }}
         {{ "<!-- nav btn -->" | safeHTML }}
-        <button class="btn btn-border-tp btn-small ml-0 ml-lg-3 mb-3 mb-lg-0" onclick="window.location.href='{{ .Params.banner.url | default "#" }}'">
+        <button class="btn btn-border-tp btn-small ml-0 ml-lg-3 mb-3 mb-lg-0" onclick="window.location.href='{{ .Params.buy | default "#" }}'">
           {{ .Params.banner.label | default "Buy now" }}
         </button>
         {{ end }}
