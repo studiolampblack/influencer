@@ -30,7 +30,7 @@
 
           {{ range .Site.Menus.main }}
           <li class="nav-item">
-            <a class="nav-link smoth-scroll" href="{{ $.Site.BaseURL }}#{{ .URL }}">{{ .Name }}</a>
+            <a class="nav-link smoth-scroll" href="#{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
