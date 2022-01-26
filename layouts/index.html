@@ -5,18 +5,17 @@
 <section class="banner-main py-7" id="banner">
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-7">
+        <div class="col-lg-7 col-md-8">
           <div class="main-banner">
-            <span class="text-color font-weight-bold"></span>
             <h1 class="mb-3 mt-2">{{ .Site.Params.banner.title }}</h1>
             <p class="mb-4">{{ .Site.Params.description | markdownify }}</p>
-            <button class="btn btn-main mt-2" onclick="window.location.href='{{ range $topBook }}{{ .Permalink }}{{ end }}'">Get the latest book <i class="fa-solid fa-angle-right ml-3"></i>
+            <button class="btn btn-main mt-2" onclick="window.location.href='{{ range $topBook }}{{ .Permalink }}{{ end }}'">Check out the latest book <i class="fa-solid fa-angle-right ml-3"></i>
             </button>
           </div>
         </div>
   
         
-        <div class="col-5 d-lg-block">
+        <div class="col-5 d-none d-lg-block">
           <div class="main-banner">
             <h3 class="mb-3 mt-2">Latest parts</h3>
             <div class="banner-img">
