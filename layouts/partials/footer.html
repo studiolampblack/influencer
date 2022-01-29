@@ -96,7 +96,7 @@
 <script async src="{{ "js/fontawesome.min.js" | relURL }}"></script>
 
 <!-- cookie -->
-{{ if (or site.Params.cookies.enable .Site.Params.googleAnalitycsID) }}
+{{ if (or site.Params.cookies.enable .Site.Params.googleAnalitycsID .Site.Params.microsoftClarityId) }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
 	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-main ml-2">I Accept</span>
@@ -112,6 +112,9 @@
 					expires: {{ site.Params.cookies.expire_days }}
 				});
 				cookieBox.classList.add('cookie-box-hide');
+        {{ with .Site.Params.microsoftClarityId}}
+        window.clarity('consent')
+        {{ end }}
 			};
 		}
 	})(jQuery);
